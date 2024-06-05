@@ -1,0 +1,13 @@
+ADD $t0, $t1, $s2
+SUB $s2, $t3, $t1
+SRL $t1, $s2, 1
+SLL $t3, $t1, 1
+AND $t0, $t2, $s2
+OR $t1, $s2, $s1
+XOR $t3, $t2, $t1
+ADDI $t2, $s1, 7
+BEQ $t0, $t1, 12
+BNE $t2, $s2, 2
+SW $s0, 7($t0)
+LW $t2, 2($t3)
+J 2
